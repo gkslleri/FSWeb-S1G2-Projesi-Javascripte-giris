@@ -6,7 +6,7 @@
 
 /*
 Bu görevleri yaparken, yazdığın kod'un doğru çıktı verdiğini kontrol etmek için console.log'u kullanmanı öneririz.
-Bunun için cevabı direk console'a logla veya çağırdığın fonksiyondan dönen değeri console'a logla.  
+Bunun için cevabı direkt console'a logla veya çağırdığın fonksiyondan dönen değeri console'a logla.  
 Örneğin:  console.log(ornekFonksiyon(deger1,deger2))
 */
 
@@ -20,6 +20,13 @@ Aşağıdakileri yap:
    İPUCU: fonksiyon oluşturmaya gerek yok
 */
 
+let surucuYasi = 32;
+if (surucuYasi > 18) {
+  console.log(true);
+} else {
+  console.log(false);
+}
+
 /*
 Görev 1b - Değerler (puanlamaya dahil değildir)
 
@@ -32,6 +39,13 @@ Aşağıdakileri yap:
    İPUCU: fonksiyon oluşturmaya gerek yok
 */
 
+let birinciDeger = 10;
+let ikinciDeger = 20;
+if (birinciDeger <= ikinciDeger) {
+  birinciDeger = ikinciDeger;
+} 
+console.log(birinciDeger);
+
 /*
 Görev 1c - String bir değeri Number'a dönüştürün (puanlamaya dahil değildir)
 
@@ -43,6 +57,10 @@ Aşağıdakileri yap:
    İPUCU: Number metoduna bakabilirsin
 */
 
+let stringDeger = "1999";
+let numberDeger = Number(stringDeger);
+console.log(numberDeger);
+
 /*
 Görev 1d - Çarpma
  
@@ -52,9 +70,10 @@ Aşağıdakileri yaparak carpma isimli fonksiyonu tamamla:
    3. console.log(carpma(7,4)) ile yazdığın fonsiyonu test edin. Console'da sonucu 28 olarak görmelisin.
 */
 
-function carpma(/*buraya kodunu yazabilirsin*/) {
-  /*buraya kodunu yazabilirsin*/
+function carpma(a, b) {
+  return a * b;
 }
+console.log(carpma(7, 4));
 
 /* Görev 2 : Köpeğin Yaşı */
 
@@ -65,9 +84,10 @@ Aşağıdakileri yap:
  3. Hesaplanan köpeğin yaşını dönün.
  */
 
-function kopeginYasi(/*buraya kodunu yazabilirsin*/) {
-  /*buraya kodunu yazabilirsin*/
+function kopeginYasi(yas, yil) {
+  return (yil - yas) * 7;
 }
+console.log(kopeginYasi(2014, 2020));
 
 /* Görev 3 */
 /*
@@ -113,9 +133,10 @@ Aşağdaki milDonusturucu fonksiyonunu aşağıdakileri kullanarak tamamla:
 3. Mil değerini geri dönün
 */
 
-function milDonusturucu(/*buraya kodunu yazabilirsin*/) {
-  /*buraya kodunu yazabilirsin*/
+function milDonusturucu(Kilometre) {
+  return mil = Kilometre * 0.621371;
 }
+console.log(milDonusturucu(67));
 
 //Görev 4b - Santimetreden Feet
 /*
@@ -127,9 +148,11 @@ Aşağıdakileri feetDonusturucu fonsiyonunu kullanarak yap:
 Google'da arama ipucu: "feet cm dönüştürme"
 */
 
-function feetDonusturucu(/*buraya kodunu yazabilirsin*/) {
-  /*buraya kodunu yazabilirsin*/
+function feetDonusturucu(cm) {
+  return feet = cm * 0.0328084;
 }
+
+console.log(feetDonusturucu(100));
 
 /* Görev 5 : 5 küçük maymun yatakta zıplamış şarkısını çocuklar için hazırladığımı varsayalım. https://www.youtube.com/watch?v=e4EJ34xnlxk */
 
